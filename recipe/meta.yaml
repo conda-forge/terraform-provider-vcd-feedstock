@@ -1,13 +1,13 @@
 {% set provider = "VCD" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "2.7.0" %}
+{% set version = "2.8.0" %}
 
 {% set name = goname.split('/')[-1] %}
 {% set pkg_src = ('src/'+goname).replace("/",os.sep) %}
 
 {% set x4_plugin = name + '_v' + version + "_x4" + (".exe" if win else "")%}
 
-{% set sha256 = "4668ea0c27adda152944612d266215d3f77f519f7581b1e584de88096b6f3434" %}
+{% set sha256 = "93c45a5d732b269448d3184ca85bff3e3122e146818cd2bc6de5d9326f1ec3f6" %}
 {% set sha256_win64 = "1007c2b4cfd3279bfd0bea9b47c3e9cad8ef6be55e9eee7e994dacd836ff083c" %}
 
 package:
